@@ -37,7 +37,7 @@ public class OAuth2Configuration extends AuthorizationServerConfigurerAdapter {
                 .secret(encoder.encode("654321"))      //只与客户端分享的secret，随便写，但是注意要加密
                 .autoApprove(true)    //自动审批
                 .scopes("book", "user", "borrow")     //授权范围，这里我们使用全部all
-                .redirectUris("http://localhost:8180/login") //可以写多个，当有多个时需要在验证请求中指定使用哪个地址进行回调
+                .redirectUris("http://localhost:8180/login", "http://localhost:8182/login", "http://localhost:8181/login") //可以写多个，当有多个时需要在验证请求中指定使用哪个地址进行回调
                 .authorizedGrantTypes("client_credentials", "password", "implicit", "authorization_code", "refresh_token");
         //授权模式，一共支持5种，除了之前我们介绍的四种之外，还有一个刷新Token的模式
         //这里我们直接把五种都写上，方便一会实验，当然各位也可以单独只写一种一个一个进行测试

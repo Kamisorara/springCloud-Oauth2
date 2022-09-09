@@ -5,3 +5,6 @@ server:
     #这里修改一下context-path，这样保存的Cookie会使用指定的路径，就不会和其他服务打架了
     #但是注意之后的请求都得在最前面加上这个路径
     context-path: /sso
+spring:
+  application:
+    name: auth-service

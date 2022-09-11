@@ -12,8 +12,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class BearerTokenRequestInterceptor implements RequestInterceptor {
-    private static final Pattern BEARER_TOKEN_HEADER_PATTERN = Pattern.compile("^Bearer (?<token>[a-zA-Z0-9-._~+/]+=*)$",
-            Pattern.CASE_INSENSITIVE);//按照JWT的格式要求做匹配
+    private static final Pattern BEARER_TOKEN_HEADER_PATTERN = Pattern.compile("^Bearer (?<token>[a-zA-Z0-9-._~+/]+=*)$", Pattern.CASE_INSENSITIVE);//按照JWT的格式要求做匹配
 
     @Override
     public void apply(RequestTemplate template) {

@@ -1,0 +1,136 @@
+2022-09-12 10:25:50,293 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.31.250:8182:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 10:25:50,297 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.31.250:8182_true,
+
+2022-09-12 10:26:15,492 INFO DEFAULT_GROUP@@auth-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.31.174:8500:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 10:26:15,492 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@auth-service, ips: 192.168.31.174:8500_true,
+
+2022-09-12 10:26:17,825 INFO DEFAULT_GROUP@@borrow-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.31.174:8181:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 10:26:17,825 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 192.168.31.174:8181_true,
+
+2022-09-12 10:26:23,241 INFO DEFAULT_GROUP@@book-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.31.174:8180:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 10:26:23,241 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@book-service, ips: 192.168.31.174:8180_true,
+
+2022-09-12 10:26:25,919 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.31.174:8182:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 10:26:25,919 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.31.250:8182_true,192.168.31.174:8182_true,
+
+2022-09-12 13:45:54,131 INFO DEFAULT_GROUP@@borrow-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.31.174:8181:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 13:45:54,131 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 
+
+2022-09-12 13:45:54,229 INFO DEFAULT_GROUP@@book-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.31.174:8180:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 13:45:54,229 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@book-service, ips: 
+
+2022-09-12 13:45:54,241 INFO DEFAULT_GROUP@@auth-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.31.174:8500:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 13:45:54,241 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@auth-service, ips: 
+
+2022-09-12 13:45:54,259 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.31.174:8182:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 13:45:54,259 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.31.250:8182_true,
+
+2022-09-12 14:03:18,280 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.31.250:8182:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 14:03:18,283 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.31.250:8182_true,
+
+2022-09-12 14:05:06,914 INFO DEFAULT_GROUP@@auth-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.31.174:8500:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 14:05:06,914 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@auth-service, ips: 192.168.31.174:8500_true,
+
+2022-09-12 16:50:48,547 INFO DEFAULT_GROUP@@auth-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.31.174:8500:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 16:50:48,548 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@auth-service, ips: 
+
+2022-09-12 18:07:05,299 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.31.174:8182:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 18:07:05,299 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.31.250:8182_true,192.168.31.174:8182_true,
+
+2022-09-12 18:35:26,738 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.31.174:8182:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 18:35:26,738 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.31.250:8182_true,
+
+2022-09-12 18:38:50,324 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.31.174:8182:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 18:38:50,324 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.31.250:8182_true,192.168.31.174:8182_true,
+
+2022-09-12 18:38:55,508 INFO DEFAULT_GROUP@@borrow-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.31.174:8181:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 18:38:55,508 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 192.168.31.174:8181_true,
+
+2022-09-12 18:38:59,195 INFO DEFAULT_GROUP@@book-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.31.174:8180:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 18:38:59,195 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@book-service, ips: 192.168.31.174:8180_true,
+
+2022-09-12 18:42:18,624 INFO DEFAULT_GROUP@@auth-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.31.174:8500:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 18:42:18,624 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@auth-service, ips: 192.168.31.174:8500_true,
+
+2022-09-12 18:54:55,874 INFO DEFAULT_GROUP@@auth-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.31.174:8500:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 18:54:55,874 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@auth-service, ips: 
+
+2022-09-12 18:56:52,359 INFO DEFAULT_GROUP@@auth-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.31.174:8500:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 18:56:52,359 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@auth-service, ips: 192.168.31.174:8500_true,
+
+2022-09-12 18:58:05,581 INFO DEFAULT_GROUP@@auth-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.31.174:8500:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 18:58:05,581 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@auth-service, ips: 
+
+2022-09-12 18:59:30,718 INFO DEFAULT_GROUP@@book-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.31.174:8180:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 18:59:30,718 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@book-service, ips: 
+
+2022-09-12 18:59:33,674 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.31.174:8182:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 18:59:33,674 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.31.250:8182_true,
+
+2022-09-12 18:59:33,715 INFO DEFAULT_GROUP@@borrow-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.31.174:8181:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 18:59:33,715 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 
+
+2022-09-12 18:59:45,164 INFO DEFAULT_GROUP@@book-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.31.174:8180:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 18:59:45,164 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@book-service, ips: 192.168.31.174:8180_true,
+
+2022-09-12 19:00:13,753 INFO DEFAULT_GROUP@@book-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.31.174:8180:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 19:00:13,753 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@book-service, ips: 
+
+2022-09-12 19:00:27,297 INFO DEFAULT_GROUP@@borrow-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.31.174:8181:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 19:00:27,297 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 192.168.31.174:8181_true,
+
+2022-09-12 19:00:32,329 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.31.174:8182:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 19:00:32,329 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.31.250:8182_true,192.168.31.174:8182_true,
+
+2022-09-12 19:00:40,063 INFO DEFAULT_GROUP@@book-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.31.174:8180:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 19:00:40,063 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@book-service, ips: 192.168.31.174:8180_true,
+
+2022-09-12 19:02:14,991 INFO DEFAULT_GROUP@@auth-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.31.174:8500:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 19:02:14,991 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@auth-service, ips: 192.168.31.174:8500_true,
+
+2022-09-12 19:08:43,293 INFO DEFAULT_GROUP@@borrow-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.31.174:8181:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 19:08:43,293 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 
+
+2022-09-12 19:08:43,359 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.31.174:8182:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 19:08:43,359 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.31.250:8182_true,
+
+2022-09-12 19:08:43,387 INFO DEFAULT_GROUP@@book-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.31.174:8180:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 19:08:43,387 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@book-service, ips: 
+
+2022-09-12 19:08:43,434 INFO DEFAULT_GROUP@@auth-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.31.174:8500:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-09-12 19:08:43,434 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@auth-service, ips: 
+

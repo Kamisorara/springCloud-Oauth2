@@ -1,0 +1,8 @@
+2022-09-12 10:25:46,434 WARN [master-db] jdbc:mysql://192.168.31.250:3306/nacos-config?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2022-09-12 10:25:48,490 WARN isQuickStart:false
+
+2022-09-12 14:03:14,946 WARN [master-db] jdbc:mysql://192.168.31.250:3306/nacos-config?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2022-09-12 14:03:16,574 WARN isQuickStart:false
+

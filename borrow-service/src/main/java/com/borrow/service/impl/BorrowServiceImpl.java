@@ -9,14 +9,11 @@ import com.commons.entity.Book;
 import com.commons.entity.Borrow;
 import com.commons.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.oauth2.client.OAuth2RestTemplate;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 public class BorrowServiceImpl implements BorrowService {

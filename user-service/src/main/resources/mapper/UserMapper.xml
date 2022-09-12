@@ -6,4 +6,9 @@
         FROM `db_user` du
         WHERE du.uid = #{userId};
     </select>
+    <select id="getUserByUserName" resultType="com.commons.entity.User">
+        SELECT *
+        FROM `db_user` du
+        WHERE du.user_name = #{userName}
+    </select>
 </mapper>

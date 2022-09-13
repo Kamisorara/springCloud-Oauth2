@@ -6,8 +6,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.crypto.password.NoOpPasswordEncoder;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+
 
 @Configuration
 @EnableWebSecurity
@@ -20,18 +21,15 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Bean
     @Override
     public AuthenticationManager authenticationManagerBean() throws Exception {
-        AuthenticationManager manager = super.authenticationManagerBean();
-        return manager;
+        return super.authenticationManagerBean();
     }
 
     /**
-     * @return org.springframework.security.crypto.password.PasswordEncoder
-     * @Date 14:35 2019/7/11
-     * @Param [不用加密]
+     * [使用BCryptPasswordEncoder加密] 并注入 spring 容器
      **/
     @Bean
     public static PasswordEncoder passwordEncoder() {
-        return NoOpPasswordEncoder.getInstance();
+        return new BCryptPasswordEncoder(); //这里使用BCryptPasswordEncoder对密码进行加密注入Spring容器
     }
 
 }

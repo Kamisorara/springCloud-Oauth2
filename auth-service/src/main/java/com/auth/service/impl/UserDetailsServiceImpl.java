@@ -17,7 +17,7 @@ import javax.annotation.Resource;
  * @description: 接口.
  */
 
-@Component("userDetailsService")
+@Component
 public class UserDetailsServiceImpl implements UserDetailsService {
 
     @Resource
@@ -31,7 +31,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
             throw new UsernameNotFoundException("用户不存在或密码错误");
         }
         UserVoDetail userVoDetail = new UserVoDetail();
-        userVoDetail.setUserId(user.getUid());
+        userVoDetail.setUserId(user.getUserId());
         userVoDetail.setUsername(user.getUserName());
         userVoDetail.setPassword(user.getPassword());
         return userVoDetail;

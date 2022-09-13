@@ -6,11 +6,11 @@ server:
     #但是注意之后的请求都得在最前面加上这个路径
     context-path: /sso
 spring:
-  #配置数据源
-  datasource:
-    url: jdbc:mysql://192.168.31.250:3306/cloudstudy?characterEncoding=utf-8&serverTimezone=UTC
-    username: root
-    password: 123456
-    driver-class-name: com.mysql.cj.jdbc.Driver
+#  #配置数据源
+#  datasource:
+#    url: jdbc:mysql://192.168.31.250:3306/cloudstudy?characterEncoding=utf-8&serverTimezone=UTC
+#    username: root
+#    password: 123456
+#    driver-class-name: com.mysql.cj.jdbc.Driver
   application:
     name: auth-service

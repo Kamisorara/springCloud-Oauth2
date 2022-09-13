@@ -18,16 +18,11 @@ import com.baomidou.mybatisplus.annotation.TableName;
 @TableName(value = "db_user")
 public class User {
     //用户id
-    private Long uid;
+    private Long userId;
     //用户名
     private String userName;
     //密码
     private String password;
-    //用户年龄
-    private Integer age;
-    //用户性别
-    private String sex;
-
 
 }
 

@@ -9,6 +9,7 @@ import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.common.DefaultOAuth2AccessToken;
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
@@ -32,6 +33,7 @@ import java.util.Map;
 @EnableAuthorizationServer
 public class OAuth2Configuration extends AuthorizationServerConfigurerAdapter {
 
+
     private static final String DEMO_RESOURCE_ID = "Kamisora";
 
     private static final String SCOPE = "scope";
@@ -39,6 +41,7 @@ public class OAuth2Configuration extends AuthorizationServerConfigurerAdapter {
     private static final String CLIENT_ID = "client_id";
 
     private static final String CLIENT_SECRET = "client_secret";
+
 
     @Configuration
     @EnableResourceServer
@@ -60,6 +63,9 @@ public class OAuth2Configuration extends AuthorizationServerConfigurerAdapter {
         @Autowired
         private UserDetailsService userDetailsService;
 
+        @Autowired
+        private PasswordEncoder passwordEncoder;
+
         @Override
         public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
             //配置客户端
@@ -68,7 +74,8 @@ public class OAuth2Configuration extends AuthorizationServerConfigurerAdapter {
                     .authorizedGrantTypes("password", "refresh_token")
                     .scopes(SCOPE)
                     .authorities("oauth2")
-                    .secret(CLIENT_SECRET);
+                    .secret(passwordEncoder.encode(CLIENT_SECRET)); //因为使用的oauth2是接入springCloud的，所以配置方式和普通的单体应用的方式不太一样
+
         }
 
         @Override
@@ -120,14 +127,12 @@ public class OAuth2Configuration extends AuthorizationServerConfigurerAdapter {
                 additionalInfo.put("license", DEMO_RESOURCE_ID);
                 additionalInfo.put("userId", userDto.getUserId());
                 ((DefaultOAuth2AccessToken) accessToken).setAdditionalInformation(additionalInfo);
-                //设置token的过期时间30分钟
+                //设置token的过期时间7天
                 Calendar nowTime = Calendar.getInstance();
-                nowTime.add(Calendar.MINUTE, 30);
+                nowTime.add(Calendar.DATE, 7);
                 ((DefaultOAuth2AccessToken) accessToken).setExpiration(nowTime.getTime());
                 return accessToken;
             };
         }
-
-
     }
 }
